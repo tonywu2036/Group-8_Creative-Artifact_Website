@@ -5,7 +5,7 @@ A visual journey blending **photography and illustration** to explore how creati
 Each piece captures a unique moment where **reality meets the surreal**, combining light, texture, and imagination.
 
 **Live Website:**  
-[View Project on GitHub Pages](https://tonywu2036.github.io/CULT26529GD-Creative-Leadership-and-Problem-Solving/)
+[View Project on GitHub Pages](https://tonywu2036.github.io/Group-8_Creative-Artifact_Website/)
 ---
 
 ## Project Concept
