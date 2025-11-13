@@ -141,6 +141,74 @@
       color: #c084fc;
       text-shadow: 0 0 10px rgba(192,132,252,0.5);
     }
+    
+/* References Section */
+.references {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  padding-top: 50px;
+  margin-top: 80px;
+  color: #e5e7eb;
+}
+
+.ref-title {
+  font-size: 24px;
+  font-weight: 600;
+  color: #c4b5fd;
+  margin-bottom: 20px;
+  text-shadow: 0 0 12px rgba(196, 181, 253, 0.3);
+}
+
+
+.ref-list {
+  counter-reset: ref-counter;
+  padding-left: 0;
+  list-style: none;
+}
+
+
+.ref-list li {
+  counter-increment: ref-counter;
+  margin-bottom: 16px;
+  font-size: 15px;
+  line-height: 1.7;
+  color: #d1d5db;
+
+
+  text-indent: -22px;  
+  padding-left: 36px;
+
+  padding-top: 10px;
+  padding-bottom: 10px;
+  border-radius: 8px;
+  transition: all 0.25s ease;
+  position: relative;
+}
+
+
+.ref-list li::before {
+  content: counter(ref-counter) ". ";
+  position: absolute;
+  left: 0;
+  top: 10px;
+  font-size: 15px;
+  color: #9ca3af;
+  transition: color 0.25s ease, transform 0.25s ease;
+}
+
+
+.ref-list li:hover {
+  background: rgba(124, 58, 237, 0.12);
+  color: #f3f4f6;
+  box-shadow: 0 0 12px rgba(168, 85, 247, 0.35);
+  transform: translateX(4px);
+}
+
+.ref-list li:hover::before {
+  color: #c084fc;
+  transform: translateX(3px);
+}
+
+
 
     @media (max-width: 768px) {
       .artwork-section,
@@ -152,6 +220,8 @@
         max-width: 100%;
       }
     }
+
+
   </style>
 </head>
 <body>
@@ -257,6 +327,49 @@
         </p>
       </div>
     </section>
+
+    
+    <!-- References Section -->
+<section class="references">
+  <h2 class="ref-title">References</h2>
+
+  
+  <ol class="ref-list">
+    <li>
+      Amabile, T. M., & Pratt, M. G. (2016). <em>The influence of intrinsic motivation and synergistic extrinsic motivators on creativity and innovation</em>. Journal of Applied Psychology, 101(8), 1189–1200.
+    </li>
+
+    <li>
+      Edmondson, A. (1999). <em>Psychological safety and learning behavior in work teams</em>. Administrative Science Quarterly, 44(2), 350–383.
+    </li>
+
+    <li>
+      Gilson, L. L., & Shalley, C. E. (2004). <em>A little creativity goes a long way: An examination of teams’ engagement in creative processes</em>. Journal of Management, 30(4), 453–470.
+    </li>
+
+    <li>
+      Goldsworthy, A. (2000). <em>From natural to novel: The cognition-broadening effects of contact with nature at work on creativity</em>. Environmental Psychology Review, 22(4), 120–132.
+    </li>
+
+    <li>
+      Ryan, R. M., & Deci, E. L. (2000). <em>Self-determination theory and the facilitation of intrinsic motivation, social development, and well-being</em>. American Psychologist, 55(1), 68–78.
+    </li>
+
+    <li>
+      Shalley, C. E., Zhou, J., & Oldham, G. R. (2004). <em>The effects of personal and contextual characteristics on creativity: Where should we go from here?</em> Journal of Management, 30(6), 933–958.
+    </li>
+
+    <li>
+      Tierney, P., & Farmer, S. M. (2002). <em>Creative self-efficacy: Its potential antecedents and relationship to creative performance</em>. Academy of Management Journal, 45(6), 1137–1148.
+    </li>
+
+    <li>
+      Zhou, J., & George, J. M. (2001). <em>When job dissatisfaction leads to creativity: Encouraging the expression of voice</em>. Academy of Management Journal, 44(4), 682–696.
+    </li>
+  </ol>
+</section>
+
+
 
     <footer class="footer">
       Between Reality and Imagination · Group 8 Creative Artifact
